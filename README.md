@@ -1,7 +1,7 @@
 Project Description
 ==============================
 
-This project allows host mobility without breaking the connectivity. This is done by creating a virtual interface (similar to VPN end-points) and binding the connection to those interface. This prototype captures the incoming packages from the Kernel netfilter library (through the ip_queue interface), adds it to the network stack and it is handled by the NIDA prototype. It then can forward it to any destinations, change the packages, etc.
+This project allows host mobility without breaking the connectivity. This is done by creating a virtual interfaces (similar to VPN end-points) and binding the connection to those interface. This prototype captures the incoming packages from the Kernel netfilter library (through the ip_queue interface), adds it to the network stack and it is handled by the NIDA prototype. It then can forward it to any destinations, change the packages, etc.
 
 More information about the prototype can be found here: [Article at Research Gate](https://www.researchgate.net/publication/221325114_A_next_generation_internet_architecture_for_mobility_and_multi-homing_support)
 

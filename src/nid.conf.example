@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<configuration>
+  <type>0</type>
+  <gateway>
+    <nidgw></nidgw>
+    <ip>172.16.3.4</ip>
+  </gateway> 
+  <nid>
+    <nodeID>3ffe::4</nodeID>
+    <nidcore>ffff:ffff::f</nidcore>
+    <nidcorehome>ffff:ffff::f</nidcorehome>
+  </nid>
+  <rvs>
+    <nidrvs>3ffe:3::11</nidrvs>
+    <rvsIP>10.10.3.11</rvsIP>
+    <rvsTimeout>5</rvsTimeout>
+  </rvs>
+  <dht>
+    <niddht>dead::dead</niddht>
+    <dhtIP>8.8.8.8</dhtIP>
+    <dhtPort>3632</dhtPort>
+  </dht>  
+  <niddns>dead::dead</niddns>
+  <dns>0</dns>
+  <dhcp>0</dhcp>
+  <dht>0</dht>
+  <primaryIface>wlan0</primaryIface>
+</configuration>

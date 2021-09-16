@@ -1,0 +1,27 @@
+Manual de instrucoes dos scripts
+Date: 23/01/2008
+
+configura_ipv6.sh: 	(OBSOLETO) arquivo antigo para a configuracao da rede IPv6 para teste. 
+		    	Ainda esta com a topologia antiga e com os nomes antigos das maquinas. 
+		    	Serve como fonte de exemplo de shellscript.
+
+extrai_dados_prot.sh: 	script de decodificacao dos arquivos do ITG. Joga o resultado no
+		      	formato TXT para ser processado pelo AWK.
+
+extrai_param.sh: 	script de extracao dos parametros do arquivo TXT gerado pelo script
+		 	extrai_dados_prot.sh. Os parametros extraidos sao: bitrate, delay e jitter.
+
+medidas_prototipo.sh: 	script para envio de dados utilizando o ITG. Ele realiza a transmissao
+			de dados baseado no tamanho dos pacotes e repeticoes por pacote.
+
+monta_topologia_testes_01.sh:	(OBSOLETO) arquivo antigo de configuracao para testes na labgiga.
+				Somente como exemplo.
+
+planilha.sh:		script de decodificacao dos arquivos do ITG para todos os modos do modelo
+			de seguranca. Joga o resultado no formato TXT para ser processado pelo AWK.
+
+recebe_jtg.sh:		script de recepcao de trafego JTG. Verifica a existencia de planilha
+			anterior para sobrescrever.
+
+transmite_jtg.sh:	script de envio de trafego JTG.
+

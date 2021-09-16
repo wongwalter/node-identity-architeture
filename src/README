@@ -1,0 +1,29 @@
+Pacotes necessarios no Debian:
+=> Para compilar
+- autoconf
+- automake
+- gcc
+=> Chamadas RPC
+- libxml2
+- libxml2-dev
+=> Bibliotecas libipq
+- iptables
+- iptables-dev
+
+Execucao do nida
+1) Configurar o arquivo nid.conf (ver arquivo nid.conf.example)
+
+2) Carregar a biblioteca do ip_queue
+modprobe ip_queue
+
+3) Carregar a biblioteca da interface virtual
+modprobe tun
+
+4) Instalar o filtro
+iptables -A OUTPUT -o nid0 -s 1.0.0.0/8 -d ! localhost -j QUEUE
+
+5) Exportar o caminho das bibliotecas
+EXPORT LD_LIBRARY_PATH=.
+
+6) Executar o nidd
+

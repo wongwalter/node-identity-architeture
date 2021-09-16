@@ -1,0 +1,9 @@
+Para executar a interface grafica, deve ser instalado as seguintes ferramentas:
+- python
+- pyqt-tools
+
+Passos para a execucao da interface grafica:
+1) compilar a interface com o usuario: pyuic janela.ui -o janela.py
+2) Executar o codigo da janela principal: python janelaPrincipal.py
+
+Ao final do processo, ele criara no diretorio corrente um arquivo nid.conf
